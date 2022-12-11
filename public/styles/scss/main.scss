@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@font-face {
+  font-family: 'adineue PRO Cyr';
+  src: url('../../fonts/adineuePROCyr-BoldWeb.woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background: #0A0914;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.46);
+  border-bottom: 1px solid #8a8a8a;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  // Header Navigation
+  .header-navigation {
+    max-width: 1620px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: auto;
+    margin-left: auto;
+
+    nav {
+      @include flex-center-all();
+
+      ul {
+        list-style: none;
+      }
+
+      .header-navigation--ul--logo {
+        margin-right: 120px;
+
+        a {
+          @include flex-center-all();
+
+          li:last-child {
+            font-family: 'adineue PRO Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            padding-left: 9px;
+            margin-top: -2px;
+          }
+        }
+      }
+
+      .header-navigation--ul--list {
+        @include flex-center-all();
+        margin-top: 5px;
+        margin-right: 64px;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 60px;
+          }
+
+          a {
+            font-size: 14px;
+            font-family: 'Axiforma';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            color: #AEAEAE;
+            transition: .2s ease;
+
+            &:hover {
+              filter: brightness(140%);
+            }
+          }
+
+          span a {
+            color: #21D4FD
+          }
+        }
+      }
+
+      .header-navigation--ul--social-media {
+        @include flex-center-all();
+        margin-top: 5px;
+        margin-right: 33px;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+
+          a {
+            color: #F5F5F5;
+            transition: .2s ease;
+
+            &:hover {
+              color: #21D4FD;
+            }
+          }
+        }
+      }
+
+      .header-navigation--ul--language-selection {
+        @include flex-center-all();
+        margin-right: 40px;
+
+        li a {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          color: #F5F5F5;
+        }
+      }
+
+      .header-navigation--ul--user {
+        li {
+          margin-bottom: -3px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-image: url(../../img/main-images/Showcase-Section/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Welcome Section
+  .welcome-section {
+    padding-top: 221px;
+
+    .welcome-section--article {
+      max-width: 451px;
+
+      h1 {
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 79px;
+        line-height: 75px;
+        color: #FFFFFF;
+
+        span {
+          background: linear-gradient(350.71deg, #21D4FD 20.56%, #E40ECF 70.92%), #FFFFFF;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+      }
+    }
+
+    .welcome-section--button {
+      margin-top: 48px;
+
+      a {
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 75px;
+        color: #FFFFFF;
+        background: linear-gradient(262.17deg, #21D4FD -9.98%, #E40ECF 62.2%);
+        border-radius: 7px;
+        padding: 18px 50px;
+      }
+    }
+
+    .welcome-section--description {
+      font-family: 'adineue PRO Cyr';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+      max-width: 400px;
+      padding-top: 60px;
+    }
+  }
+
+  // Join-us Section
+  .join-us {
+    padding-top: 180px;
+    position: relative;
+
+    .join-us--info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .join-us--image {
+        position: absolute;
+        left: -20px;
+        top: 15px;
+        user-select: none;
+      }
+
+      .join-us--article {
+        &>p {
+          font-family: 'Lab Grotesque';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 32px;
+          color: #FFFFFF;
+          max-width: 586px;
+        }
+
+        .join-us-article--main-article {
+          padding-top: 30px;
+          display: flex;
+          align-items: center;
+
+          h2 {
+            font-family: 'adineue PRO Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 44px;
+            background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 419px;
+          }
+
+          iconify-icon {
+            color: #21D4FD;
+            padding: 45px;
+            border: 2px solid rgba(33, 212, 253, 0.4);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    .join-us--actual-drops {
+      padding-top: 185px;
+      position: relative;
+      @include flex-center-all();
+
+      .join-us--actual-drops--card{
+        position: relative;
+
+        &:last-child{
+          margin-left: 40px;
+          .join-us--actual-drops--card--info{
+            right: 10px;
+          }
+        }
+
+        .join-us--actual-drops--card--background {
+          position: relative;
+          z-index: 1;
+          filter: blur(36px);
+        }
+  
+        .join-us--actual-drops--card--info {
+          position: absolute;
+          z-index: 2;
+          color: white;
+          top: 0px;
+          left: 10px;
+  
+          h3 {
+            font-family: 'adineue PRO Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 53px;
+            line-height: 38px;
+            background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            padding-top: 28px;
+          }
+  
+          p {
+            font-family: 'Lab Grotesque';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 26px;
+            color: #FFFFFF;
+            padding-top: 20px;
+            max-width: 586px;
+          }
+        }
+      }
+    }
+  }
+  
+}

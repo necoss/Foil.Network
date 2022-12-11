@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "adineue PRO Cyr";
+  src: url("../../fonts/adineuePROCyr-BoldWeb.woff");
+  font-style: normal;
+  font-weight: bold;
+}
+.container {
+  max-width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background: #0A0914;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.46);
+  border-bottom: 1px solid #8a8a8a;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .header-navigation {
+  max-width: 1620px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header .header-navigation nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-navigation nav ul {
+  list-style: none;
+}
+header .header-navigation nav .header-navigation--ul--logo {
+  margin-right: 120px;
+}
+header .header-navigation nav .header-navigation--ul--logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-navigation nav .header-navigation--ul--logo a li:last-child {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-left: 9px;
+  margin-top: -2px;
+}
+header .header-navigation nav .header-navigation--ul--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-right: 64px;
+}
+header .header-navigation nav .header-navigation--ul--list li:not(:last-child) {
+  margin-right: 60px;
+}
+header .header-navigation nav .header-navigation--ul--list li a {
+  font-size: 14px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #AEAEAE;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+header .header-navigation nav .header-navigation--ul--list li a:hover {
+  -webkit-filter: brightness(140%);
+          filter: brightness(140%);
+}
+header .header-navigation nav .header-navigation--ul--list li span a {
+  color: #21D4FD;
+}
+header .header-navigation nav .header-navigation--ul--social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-right: 33px;
+}
+header .header-navigation nav .header-navigation--ul--social-media li:not(:last-child) {
+  margin-right: 10px;
+}
+header .header-navigation nav .header-navigation--ul--social-media li a {
+  color: #F5F5F5;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+header .header-navigation nav .header-navigation--ul--social-media li a:hover {
+  color: #21D4FD;
+}
+header .header-navigation nav .header-navigation--ul--language-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+header .header-navigation nav .header-navigation--ul--language-selection li a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #F5F5F5;
+}
+header .header-navigation nav .header-navigation--ul--user li {
+  margin-bottom: -3px;
+}
+header .header-navigation nav .header-navigation--ul--user li a {
+  color: white;
+}
+
+main {
+  background-image: url(../../img/main-images/Showcase-Section/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .welcome-section {
+  padding-top: 221px;
+}
+main .welcome-section .welcome-section--article {
+  max-width: 451px;
+}
+main .welcome-section .welcome-section--article h1 {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 79px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
+main .welcome-section .welcome-section--article h1 span {
+  background: linear-gradient(350.71deg, #21D4FD 20.56%, #E40ECF 70.92%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+main .welcome-section .welcome-section--button {
+  margin-top: 48px;
+}
+main .welcome-section .welcome-section--button a {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 75px;
+  color: #FFFFFF;
+  background: linear-gradient(262.17deg, #21D4FD -9.98%, #E40ECF 62.2%);
+  border-radius: 7px;
+  padding: 18px 50px;
+}
+main .welcome-section .welcome-section--description {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  max-width: 400px;
+  padding-top: 60px;
+}
+main .join-us {
+  padding-top: 180px;
+  position: relative;
+}
+main .join-us .join-us--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+main .join-us .join-us--info .join-us--image {
+  position: absolute;
+  left: -20px;
+  top: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .join-us .join-us--info .join-us--article > p {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 586px;
+}
+main .join-us .join-us--info .join-us--article .join-us-article--main-article {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .join-us .join-us--info .join-us--article .join-us-article--main-article h2 {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  max-width: 419px;
+}
+main .join-us .join-us--info .join-us--article .join-us-article--main-article iconify-icon {
+  color: #21D4FD;
+  padding: 45px;
+  border: 2px solid rgba(33, 212, 253, 0.4);
+  border-radius: 50%;
+}
+main .join-us .join-us--actual-drops {
+  padding-top: 185px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card {
+  position: relative;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card:last-child {
+  margin-left: 40px;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card:last-child .join-us--actual-drops--card--info {
+  right: 10px;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card .join-us--actual-drops--card--background {
+  position: relative;
+  z-index: 1;
+  -webkit-filter: blur(36px);
+          filter: blur(36px);
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card .join-us--actual-drops--card--info {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 0px;
+  left: 10px;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card .join-us--actual-drops--card--info h3 {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 38px;
+  background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-top: 28px;
+}
+main .join-us .join-us--actual-drops .join-us--actual-drops--card .join-us--actual-drops--card--info p {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding-top: 20px;
+  max-width: 586px;
+}
