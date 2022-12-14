@@ -163,7 +163,7 @@ header {
 main {
   background-image: url(../../img/main-images/Showcase-Section/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 
   // Welcome Section
   .welcome-section {
@@ -280,12 +280,13 @@ main {
       position: relative;
       @include flex-center-all();
 
-      .join-us--actual-drops--card{
+      .join-us--actual-drops--card {
         position: relative;
 
-        &:last-child{
+        &:last-child {
           margin-left: 40px;
-          .join-us--actual-drops--card--info{
+
+          .join-us--actual-drops--card--info {
             right: 10px;
           }
         }
@@ -295,14 +296,14 @@ main {
           z-index: 1;
           filter: blur(36px);
         }
-  
+
         .join-us--actual-drops--card--info {
           position: absolute;
           z-index: 2;
           color: white;
           top: 0px;
           left: 10px;
-  
+
           h3 {
             font-family: 'adineue PRO Cyr';
             font-style: normal;
@@ -316,7 +317,7 @@ main {
             text-fill-color: transparent;
             padding-top: 28px;
           }
-  
+
           p {
             font-family: 'Lab Grotesque';
             font-style: normal;
@@ -331,5 +332,113 @@ main {
       }
     }
   }
-  
+
+  // Completed Airdrops
+  .completed-airdrops {
+    padding-top: 193px;
+
+    .completed-airdrops--article {
+      border-top: 1px solid #4c4a5f;
+      width: 100%;
+
+      h4 {
+        padding-top: 50px;
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 55px;
+        color: #FFFFFF;
+      }
+    }
+
+    .completed-airdrops--cards {
+      padding-top: 40px;
+
+      .completed-airdrops--cards--ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:first-child) {
+          padding-top: 40px;
+        }
+      }
+
+      .completed-airdrops--cards--card {
+        max-width: 373px;
+        border-radius: 7px;
+        transition: .4s all;
+
+        .completed-airdrops--cards--card--content {
+          transition: .4s all;
+
+          h5 {
+            font-family: 'adineue PRO Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            color: #FFFFFF;
+            padding-top: 14px;
+            transition: .4s all;
+          }
+
+          p {
+            font-family: 'Lab Grotesque';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            padding-top: 10px;
+            transition: .4s all;
+            padding-bottom: 10px;
+          }
+
+          img {
+            width: 373px;
+            height: 241px;
+          }
+        }
+
+        &:hover {
+          background: white;
+          transform: scale(1.08);
+
+          .completed-airdrops--cards--card--content {
+
+            h5,
+            p {
+              color: #0A0914;
+              transform: translate(8px, 0);
+            }
+          }
+        }
+      }
+    }
+
+    .completed-airdrops--load-more--button {
+      @include flex-center-all();
+      padding-top: 100px;
+
+      a {
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 38px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 11px;
+        padding: 14px 90px;
+        transition: .3s ease;
+
+        &:hover{
+          background: white;
+          color: #0A0914;
+        }
+      }
+    }
+  }
 }

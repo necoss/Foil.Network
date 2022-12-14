@@ -167,7 +167,7 @@ header .header-navigation nav .header-navigation--ul--user li a {
 main {
   background-image: url(../../img/main-images/Showcase-Section/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 main .welcome-section {
   padding-top: 221px;
@@ -332,4 +332,114 @@ main .join-us .join-us--actual-drops .join-us--actual-drops--card .join-us--actu
   color: #FFFFFF;
   padding-top: 20px;
   max-width: 586px;
+}
+main .completed-airdrops {
+  padding-top: 193px;
+}
+main .completed-airdrops .completed-airdrops--article {
+  border-top: 1px solid #4c4a5f;
+  width: 100%;
+}
+main .completed-airdrops .completed-airdrops--article h4 {
+  padding-top: 50px;
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+main .completed-airdrops .completed-airdrops--cards {
+  padding-top: 40px;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--ul:not(:first-child) {
+  padding-top: 40px;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card {
+  max-width: 373px;
+  border-radius: 7px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card .completed-airdrops--cards--card--content {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card .completed-airdrops--cards--card--content h5 {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #FFFFFF;
+  padding-top: 14px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card .completed-airdrops--cards--card--content p {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-top: 10px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  padding-bottom: 10px;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card .completed-airdrops--cards--card--content img {
+  width: 373px;
+  height: 241px;
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover {
+  background: white;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover .completed-airdrops--cards--card--content h5,
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover .completed-airdrops--cards--card--content p {
+  color: #0A0914;
+  -webkit-transform: translate(8px, 0);
+          transform: translate(8px, 0);
+}
+main .completed-airdrops .completed-airdrops--load-more--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+main .completed-airdrops .completed-airdrops--load-more--button a {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 11px;
+  padding: 14px 90px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .completed-airdrops .completed-airdrops--load-more--button a:hover {
+  background: white;
+  color: #0A0914;
 }
