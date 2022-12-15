@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Icons -->
   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js" defer></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+  <script src="./public/scripts/load-more-script.js" defer></script>
 </head>
 
 <body>
@@ -129,7 +131,6 @@
     </section>
 
     <!-- Completed Airdrops Section -->
-
     <section class="completed-airdrops container">
       <article class="completed-airdrops--article">
         <h4>Completed Bounty Hunt & Airdrops</h4>
@@ -239,17 +240,39 @@
           </div>
         </ul>
 
-        <div class="completed-airdrops--cards--card">
-          <div class="content"></div>
-        </div>
-
-        <div class="completed-airdrops--cards--card">
-          <div class="content"></div>
-        </div>
-
-        <div class="completed-airdrops--cards--card">
-          <div class="content"></div>
-        </div>
+        <ul class="completed-airdrops--cards--ul">
+          <div class="completed-airdrops--cards--card">
+            <a href="">
+              <div class="completed-airdrops--cards--card--content">
+                <img src="./public/img/main-images/Completed-airdrops/ad-4.png" alt="Airdrop 10 Image">
+                <h5>Completed Airdrop titile</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. </p>
+              </div>
+            </a>
+          </div>
+  
+          <div class="completed-airdrops--cards--card">
+            <a href="">
+              <div class="completed-airdrops--cards--card--content">
+                <img src="./public/img/main-images/Completed-airdrops/ad-1.png" alt="Airdrop 11 Image">
+                <h5>Completed Airdrop titile</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. </p>
+              </div>
+            </a>
+          </div>
+  
+          <div class="completed-airdrops--cards--card">
+            <a href="">
+              <div class="completed-airdrops--cards--card--content">
+                <img src="./public/img/main-images/Completed-airdrops/ad-2.png" alt="Airdrop 12 Image">
+                <h5>Completed Airdrop titile</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+            </a>
+          </div>   
+        </ul>
 
       </div>
 
@@ -258,7 +281,24 @@
       </div>
     </section>
 
+    <!-- Follow Us Section -->
+    <section class="follow-us container">
+      <article class="follow-us--article">
+        <h6>Subscribe to us and stay tuned!</h6>
+      </article>
+
+      <div class="follow-us--form">
+        <input type="email" placeholder="Enter your e-mail" class="follow-us--form--input">
+        <button class="follow-us--form--button">Send Information <iconify-icon icon="material-symbols:arrow-right-alt-rounded" width="22"></iconify-icon></button>
+      </div>
+    </section>
+
   </main>
+  
+  <div class="body--background-image">
+    <img src="./public/img/Body-background-images/Purple-square.png" alt="Purple" class="body--background-image--purple">
+    <img src="./public/img/Body-background-images/Blue-square.png" alt="Blue" class="body--background-image--blue">
+  </div>
 </body>
 
 </html>

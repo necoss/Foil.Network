@@ -37,6 +37,18 @@
 
 body {
   background: #0A0914;
+  overflow-x: hidden;
+  position: relative;
+
+  .body--background-image {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 1800px;
+    z-index: -1;
+    max-width: 1920px;
+  }
 }
 
 header {
@@ -354,6 +366,7 @@ main {
 
     .completed-airdrops--cards {
       padding-top: 40px;
+      will-change: animate;
 
       .completed-airdrops--cards--ul {
         display: flex;
@@ -369,6 +382,7 @@ main {
         max-width: 373px;
         border-radius: 7px;
         transition: .4s all;
+        display: none;
 
         .completed-airdrops--cards--card--content {
           transition: .4s all;
@@ -420,7 +434,7 @@ main {
 
     .completed-airdrops--load-more--button {
       @include flex-center-all();
-      padding-top: 100px;
+      padding-top: 60px;
 
       a {
         font-family: 'adineue PRO Cyr';
@@ -434,9 +448,99 @@ main {
         padding: 14px 90px;
         transition: .3s ease;
 
-        &:hover{
+        &:hover {
           background: white;
           color: #0A0914;
+        }
+      }
+    }
+  }
+
+  // Follow Us Section
+  .follow-us {
+    padding-top: 141px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .follow-us--article {
+      max-width: 1200px;
+
+      h6 {
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 142px;
+        line-height: 154px;
+        background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    .follow-us--form {
+      @include flex-center-all();
+      margin-top: 120px;
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, rgba(7, 196, 239, 0.61) 0%, rgba(7, 196, 239, 0.25) 100%);
+      border-radius: 8px;
+
+      .follow-us--form--input {
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        color: #FFFFFF;
+        border: 1px solid #21D4FD;
+        border-radius: 8px;
+        margin-right: 20px;
+        background: transparent;
+        padding: 13px 500px 18px 33px;
+        transition: .3s ease;
+
+        &::placeholder {
+          font-family: 'adineue PRO Cyr';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 32px;
+          color: #FFFFFF;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid white;
+        }
+      }
+
+      .follow-us--form--button {
+        @include flex-center-all();
+        font-family: 'adineue PRO Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        color: #FFFFFF;
+        cursor: pointer;
+        background: #21D4FD;
+        border-radius: 8px;
+        padding: 16px 50px;
+        border: none;
+        transition: .3s ease;
+
+        iconify-icon {
+          padding-left: 20px;
+        }
+
+        &:hover {
+          color: #21D4FD;
+          background: white;
         }
       }
     }

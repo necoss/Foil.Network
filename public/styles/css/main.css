@@ -24,6 +24,21 @@
 
 body {
   background: #0A0914;
+  overflow-x: hidden;
+  position: relative;
+}
+body .body--background-image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 1800px;
+  z-index: -1;
+  max-width: 1920px;
 }
 
 header {
@@ -351,6 +366,7 @@ main .completed-airdrops .completed-airdrops--article h4 {
 }
 main .completed-airdrops .completed-airdrops--cards {
   padding-top: 40px;
+  will-change: animate;
 }
 main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--ul {
   display: -webkit-box;
@@ -371,6 +387,7 @@ main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--
   border-radius: 7px;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  display: none;
 }
 main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card .completed-airdrops--cards--card--content {
   -webkit-transition: 0.4s all;
@@ -424,7 +441,7 @@ main .completed-airdrops .completed-airdrops--load-more--button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 main .completed-airdrops .completed-airdrops--load-more--button a {
   font-family: "adineue PRO Cyr";
@@ -442,4 +459,143 @@ main .completed-airdrops .completed-airdrops--load-more--button a {
 main .completed-airdrops .completed-airdrops--load-more--button a:hover {
   background: white;
   color: #0A0914;
+}
+main .follow-us {
+  padding-top: 141px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .follow-us .follow-us--article {
+  max-width: 1200px;
+}
+main .follow-us .follow-us--article h6 {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 142px;
+  line-height: 154px;
+  background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+main .follow-us .follow-us--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 196, 239, 0.61)), to(rgba(7, 196, 239, 0.25)));
+  background: linear-gradient(180deg, rgba(7, 196, 239, 0.61) 0%, rgba(7, 196, 239, 0.25) 100%);
+  border-radius: 8px;
+}
+main .follow-us .follow-us--form .follow-us--form--input {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  border: 1px solid #21D4FD;
+  border-radius: 8px;
+  margin-right: 20px;
+  background: transparent;
+  padding: 13px 500px 18px 33px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .follow-us .follow-us--form .follow-us--form--input::-webkit-input-placeholder {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .follow-us .follow-us--form .follow-us--form--input::-moz-placeholder {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .follow-us .follow-us--form .follow-us--form--input:-ms-input-placeholder {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .follow-us .follow-us--form .follow-us--form--input::-ms-input-placeholder {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .follow-us .follow-us--form .follow-us--form--input::placeholder {
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .follow-us .follow-us--form .follow-us--form--input:focus {
+  outline: none;
+  border: 1px solid white;
+}
+main .follow-us .follow-us--form .follow-us--form--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "adineue PRO Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: #21D4FD;
+  border-radius: 8px;
+  padding: 16px 50px;
+  border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .follow-us .follow-us--form .follow-us--form--button iconify-icon {
+  padding-left: 20px;
+}
+main .follow-us .follow-us--form .follow-us--form--button:hover {
+  color: #21D4FD;
+  background: white;
 }
