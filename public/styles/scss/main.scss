@@ -732,11 +732,13 @@ footer {
       }
     }
   }
+
   // Footer Copyrights
   .footer--copyrights {
     background: #1F1F1F;
     padding-top: 10px;
     padding-bottom: 10px;
+
     h6 {
       font-family: 'Lab Grotesque';
       font-style: normal;
@@ -745,6 +747,153 @@ footer {
       line-height: 32px;
       text-align: center;
       color: #FFFFFF;
+    }
+  }
+}
+
+
+
+// Adaptive
+@media screen and (max-width: 480px) {
+  header {
+    min-width: 320px;
+    max-width: 390px;
+
+    // Header Navigation Adaptive
+    .header-navigation {
+      max-width: 320px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      nav {
+
+        .header-navigation--ul--list,
+        .header-navigation--ul--social-media,
+        .header-navigation--ul--user {
+          display: none;
+        }
+      }
+    }
+  }
+
+  main {
+    background-image: url(../../img/main-images/Showcase-Section/background-adaptive.png);
+
+    // Welcome Section Adaptive
+    .welcome-section {
+      max-width: 320px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 160px;
+
+      .welcome-section--article {
+        max-width: 270px;
+
+        h1 {
+          width: 100%;
+          font-size: 49px;
+          line-height: 46px;
+        }
+      }
+
+      .welcome-section--button {
+        margin-top: 286px;
+
+        a {
+          font-size: 17px;
+          line-height: 75px;
+          padding: 25px 90px;
+        }
+      }
+
+      .welcome-section--description {
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 30px;
+      }
+    }
+
+    // Join Us Adaptive
+    .join-us {
+      padding-top: 0;
+      display: none; //TODO Fix this problem ---------------------------------
+
+      .join-us--info {
+        @include flex-center-all();
+
+        .join-us--image {
+          left: 0;
+        }
+      }
+    }
+
+    // Completed Airdrops Adaptive
+    .completed-airdrops {
+      max-width: 320px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .completed-airdrops--article {
+        h4 {
+          padding-top: 40px;
+          font-size: 49px;
+          line-height: 50px;
+        }
+      }
+
+      .completed-airdrops--cards {
+        .completed-airdrops--cards--ul {
+          display: flex;
+          flex-direction: column;
+
+          &:not(:first-child) {
+            padding-top: 0px;
+          }
+        }
+
+        .completed-airdrops--cards--card {
+          padding-top: 40px;
+        }
+      }
+
+      .completed-airdrops--load-more--button {
+        padding-top: 0;
+        margin-top: 40px;
+      }
+    }
+
+    // Follow Us Adaptive
+    .follow-us {
+      padding-top: 94px;
+      max-width: 320px;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .follow-us--article {
+        max-width: 300px;
+
+        h6 {
+          font-size: 49px;
+          line-height: 45px;
+        }
+      }
+
+      .follow-us--form {
+        margin-top: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+
+        .follow-us--form--input {
+          padding: 13px 25px;
+          margin-right: 0;
+        }
+
+        .follow-us--form--button{
+          padding: 16px 68px;
+          margin-top: 15px;
+        }
+      }
     }
   }
 }
