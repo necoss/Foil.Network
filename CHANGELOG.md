@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - To Add Other Sections
 - Adaptive version
 
+## [1.6] - 2022-12-17
+### Fixed
+- Adaptive page problems.
+- Adaptive Hamburger problems.
+
+### Changed:
+- Deleted background images in the bottom of the home page.
+
 ## [1.5] - 2022-12-17
 ### Added:
 - Full-Adaptive version of the home page for Mobile Phones!

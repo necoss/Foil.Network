@@ -39,6 +39,7 @@ body {
   background: #0A0914;
   overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 
   .body--background-image {
     width: 100%;
@@ -196,8 +197,8 @@ header {
           display: flex;
           align-items: center;
           position: fixed;
-          top: 25px;
-          right: 1190px;
+          top: 26px;
+          right: 20px;
         
           width: 26px;
           height: 26px;
@@ -874,6 +875,7 @@ footer {
 
         .header-navigation--ul--hamburger{
           display: block;
+          z-index: 11;
         }
       }
     }
@@ -931,7 +933,7 @@ footer {
           position: static;
 
           img {
-            width: 400px;
+            max-width: 390px;
           }
         }
 
@@ -1152,6 +1154,12 @@ footer {
 
         }
       }
+    }
+  }
+
+  body{
+    .body--background-image{
+      display: none;
     }
   }
 }
