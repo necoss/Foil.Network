@@ -857,8 +857,9 @@ footer {
 // Mobile 480px
 @media screen and (max-width: 480px) {
   header {
-    min-width: 320px;
-    max-width: 390px;
+    // min-width: 320px;
+    // max-width: 390px;
+    width: 100%;
 
     // Header Navigation Phone (480) Adaptive
     .header-navigation {
@@ -1001,8 +1002,8 @@ footer {
     // Completed Airdrops Phone (480) Adaptive
     .completed-airdrops {
       max-width: 320px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
 
       .completed-airdrops--article {
         h4 {
@@ -1023,7 +1024,21 @@ footer {
         }
 
         .completed-airdrops--cards--card {
-          padding-top: 40px;
+          margin-top: 40px;
+
+          &:hover {
+            background: white;
+            transform: scale(1.02);
+  
+            .completed-airdrops--cards--card--content {
+  
+              h5,
+              p {
+                color: #0A0914;
+                transform: translate(5px, 0);
+              }
+            }
+          }
         }
       }
 

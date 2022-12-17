@@ -887,8 +887,7 @@ footer .footer--copyrights h6 {
 
 @media screen and (max-width: 480px) {
   header {
-    min-width: 320px;
-    max-width: 390px;
+    width: 100%;
   }
   header .header-navigation {
     max-width: 320px;
@@ -1007,8 +1006,8 @@ header .header-navigation nav .header-navigation--ul--user {
   }
   main .completed-airdrops {
     max-width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   main .completed-airdrops .completed-airdrops--article h4 {
     padding-top: 40px;
@@ -1028,7 +1027,18 @@ header .header-navigation nav .header-navigation--ul--user {
     padding-top: 0px;
   }
   main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card {
-    padding-top: 40px;
+    margin-top: 40px;
+  }
+  main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover {
+    background: white;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover .completed-airdrops--cards--card--content h5,
+main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--card:hover .completed-airdrops--cards--card--content p {
+    color: #0A0914;
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
   }
   main .completed-airdrops .completed-airdrops--load-more--button {
     padding-top: 0;

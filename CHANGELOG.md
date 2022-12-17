@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - To Add Other Sections
 - Adaptive version
 
+## [1.6.1] - 2022-12-17
+### Fixed:
+- Adaptive screen size problem.
+
 ## [1.6] - 2022-12-17
 ### Fixed
 - Adaptive page problems.
