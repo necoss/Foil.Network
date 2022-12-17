@@ -1069,6 +1069,7 @@ main .completed-airdrops .completed-airdrops--cards .completed-airdrops--cards--
   main .follow-us .follow-us--form .follow-us--form--input {
     padding: 13px 25px;
     margin-right: 0;
+    width: 301px;
   }
   main .follow-us .follow-us--form .follow-us--form--button {
     padding: 16px 68px;
